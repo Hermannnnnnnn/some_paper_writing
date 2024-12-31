@@ -2,7 +2,7 @@
 My cv written as a website, in html, (s)css and in the future some java.
 
 To view my cv website, go to:
-https://htmlpreview.github.io/?https://github.com/Hermannnnnnnn/some_paper_writing/blob/main/index.html
+[https://htmlpreview.github.io/?https://github.com/Hermannnnnnnn/some_paper_writing/blob/main/index.html](https://htmlpreview.github.io/?https://github.com/Hermannnnnnnn/some_paper_writing/blob/main/index.html)
 
 | :warning: WARNING           |
 |:----------------------------|
