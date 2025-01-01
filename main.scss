@@ -9,7 +9,7 @@ $lighter-blue: #5c6bc0;
 $lightest-blue: #9fa8da;
 $white: #ffffff;
 $black: #0e1442;
-$orange: #ffb300;
+$orange: #f5961b;
 $yellow: #fdd835;
 $dark-pink: #ad1457;
 $light-pink: #d81b60;
@@ -40,7 +40,7 @@ body {
   cursor: default;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
-  text-transform: capitalize;
+  text-transform: none;
 }
 
 a {
@@ -56,23 +56,27 @@ ul {
 }
 
 h1 {
-  text-transform: capitalize;
+  text-transform: none;
 }
 
 h2 {
-  text-transform: capitalize;  
+  text-transform: none;  
 }
 
 h3 {
   color: $orange;
   margin: 10px 0;
-  text-transform: capitalize;
+  text-transform: none;
   font-size: 1.25em;
 }
 
+.accomplishments {
+  font-size: 0.9em;
+}
 .resume {
   width: 960px;
   background: $darkest-blue;
+  // background-image: url("pictures/yoda.jpg");
   color: $white;
   margin: 20px auto;
   box-shadow: 10px 10px $black;
@@ -139,14 +143,14 @@ h3 {
   margin-top: 10px;
   margin-bottom: 0;
   font-size: 1.75em;
-  text-transform: capitalize;
+  text-transform: none;
   color: $darkest-blue;
 }
 .resume .base .profile .info .job {
   margin-top: 10px;
   margin-bottom: 0;
   font-size: 1.5em;
-  text-transform: capitalize;
+  text-transform: none;
   color: $darker-blue;
 }
 .resume .base .contact div {
@@ -208,62 +212,25 @@ h3 {
 
 .column {
   float: left;
-}
-
-.resume .base .follow .box .fab-fa-linkedin i {
-  background-image: url("linkedin_icon.png");
-  // vertical-align: middle;
-}
-
-.resume .base .follow .box .fab-fa-github i {
-  background: "github_icon.png";
-  // vertical-align: middle;
-}
-
-
-.resume .base .follow .box a:hover i {
-  background: $yellow;
-  border-radius: 5px;
-  transform: rotate(45deg) scale(0.8);
-}
-.resume .base .follow .box a:hover i::before {
-  transform: rotate(-45deg) scale(1.5);
-}
-// .resume .base .follow .box i {
-//   display: inline-block;
-//   font-size: 30px;
-//   background: $orange;
-//   width: 60px;
-//   height: 60px;
-//   border-radius: 50%;
-//   line-height: 60px;
-//   color: $darker-blue;
-//   margin: 0 10px 10px 10px;
-//   transition-duration: 0.3s;
-// }
-.resume .base .follow .box i::before {
-  transition-duration: 0.3s;
-}
-.resume .base .follow .box i.fa::before {
-  display: block;
+  // margin-right:10px;
 }
 .resume .func {
   width: 100%;
   padding: 30px;
 }
-.resume .func:hover > div {
-  transition-duration: 0.5s;
-}
-.resume .func:hover > div:hover h3 i {
-  transform: scale(1.25);
-}
-.resume .func:hover > div:not(:hover) {
-  opacity: 0.5;
-}
-.resume .func h3 {
-  transition-duration: 0.3s;
-  margin-top: 0;
-}
+// .resume .func:hover > div {
+//   transition-duration: 0.5s;
+// }
+// .resume .func:hover > div:hover h3 i {
+//   transform: scale(1.25);
+// }
+// .resume .func:hover > div:not(:hover) {
+//   opacity: 0.5;
+// }
+// .resume .func h3 {
+//   transition-duration: 0.3s;
+//   margin-top: 0;
+// }
 .resume .func h3 i {
   color: $darker-blue;
   background: $orange;
@@ -277,10 +244,10 @@ h3 {
   margin-right: 8px;
   transition-duration: 0.3s;
 }
-.resume .func .work,
-.resume .func .edu {
-  float: left;
-}
+// .resume .func .work,
+// .resume .func .edu {
+//   float: left;
+// }
 .resume .func .work small,
 .resume .func .edu small {
   display: block;
@@ -350,144 +317,79 @@ h3 {
   top: 0;
 }
 .resume .func .work ul li span,
-.resume .func .edu ul li span {
+.resume .func .edu ul li span,
+.resume .func .interests ul li span {
   transition-duration: 0.3s;
 }
 .resume .func .work {
-  width: 48%;
   background: $darker-blue;
   padding: 15px;
   margin: 0 4% 15px 0;
 }
 .resume .func .edu {
-  width: 48%;
   background: $darker-blue;
   padding: 15px;
-}
-.resume .func .skills-prog {
-  clear: both;
-  background: $darker-blue;
-  padding: 15px;
-}
-.resume .func .skills-prog ul {
-  margin-left: 15px;
-}
-.resume .func .skills-prog ul li {
-  margin-bottom: 8px;
-  display: flex;
-  align-items: center;
-  transition-duration: 0.3s;
-}
-.resume .func .skills-prog ul li:hover {
-  color: $yellow;
-}
-.resume .func .skills-prog ul li:hover .skills-bar .bar {
-  background: $yellow;
-  box-shadow: 0 0 0 1px $yellow;
-}
-.resume .func .skills-prog ul li span {
-  display: block;
-  width: 120px;
-}
-.resume .func .skills-prog ul li .skills-bar {
-  background: $white;
-  height: 2px;
-  width: calc(100% - 120px);
-  position: relative;
-  border-radius: 2px;
-}
-.resume .func .skills-prog ul li .skills-bar .bar {
-  position: absolute;
-  top: -1px;
-  height: 4px;
-  background: $orange;
-  box-shadow: 0 0 0 $orange;
-  border-radius: 5px;
-}
-.resume .func .skills-soft {
-  clear: both;
-  background: $darker-blue;
-  padding: 15px;
-  margin: 15px 0 0;
-}
-.resume .func .skills-soft ul {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-}
-.resume .func .skills-soft ul li {
-  position: relative;
-}
-.resume .func .skills-soft ul li:hover svg .cbar {
-  stroke: $yellow;
-  stroke-width: 4px;
-}
-.resume .func .skills-soft ul li:hover span,
-.resume .func .skills-soft ul li:hover small {
-  transform: scale(1.2);
-}
-.resume .func .skills-soft ul li svg {
-  width: 95%;
-  fill: transparent;
-  transform: rotate(-90deg);
-}
-.resume .func .skills-soft ul li svg circle {
-  stroke-width: 1px;
-  stroke: $white;
-}
-.resume .func .skills-soft ul li svg .cbar {
-  stroke-width: 3px;
-  stroke: $orange;
-  stroke-linecap: round;
-}
-.resume .func .skills-soft ul li span,
-.resume .func .skills-soft ul li small {
-  position: absolute;
-  display: block;
-  width: 100%;
-  top: 52%;
-  transition-duration: 0.3s;
-}
-.resume .func .skills-soft ul li span {
-  top: 40%;
+  margin: 0 4% 15px 0;
 }
 .resume .func .interests {
   background: $darker-blue;
-  margin: 15px 0 0;
   padding: 15px;
+  margin: 0 4% 15px 0;
 }
-.resume .func .interests-items {
-  box-sizing: border-box;
-  padding: 0 0 15px;
-  width: 100%;
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
-}
-.resume .func .interests-items div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-}
-.resume .func .interests-items div:hover i {
-  transform: scale(1.2);
-}
-.resume .func .interests-items div:hover span {
-  color: $yellow;
-  transition-duration: 0.3s;
-}
-.resume .func .interests-items div i {
-  font-size: 45px;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  color: $orange;
-  transition-duration: 0.3s;
-}
-.resume .func .interests-items div span {
-  display: block;
-}
+
+// .resume .func .interests-items {
+//   box-sizing: border-box;
+//   padding: 0 0 15px;
+//   width: 100%;
+//   text-align: center;
+//   display: flex;
+//   justify-content: space-between;
+// }
+// .resume .func .interests-items div {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   width: 100px;
+//   height: 100px;
+//   border-radius: 50%;
+// }
+// .resume .func .interests-items div:hover i {
+//   transform: scale(1.2);
+// }
+// .resume .func .interests-items div:hover span {
+//   color: $yellow;
+//   transition-duration: 0.3s;
+// }
+// .resume .func .interests-items div i {
+//   font-size: 45px;
+//   width: 60px;
+//   height: 60px;
+//   line-height: 60px;
+//   color: $orange;
+//   transition-duration: 0.3s;
+// }
+// .resume .func .interests-items div span {
+//   display: block;
+// }
+
+
+// .skills-prog { 
+//   background-color: rgb(165, 38, 38); 
+//   // width: 80%; 
+//   // border-radius: 15px; 
+// } 
+
+.skill { 
+  background-color: rgb(116, 194, 92); 
+  color: white; 
+  padding: 1%; 
+  text-align: center; 
+  font-size: 20px; 
+  border-radius: 15px; 
+} 
+
+.skills-prog .skill { display: flex; align-items: center; }
+.skills-prog .skill p { margin-right: 10px; /* Adjust the spacing as needed */ }
+.skill-item { display: flex; align-items: center; } 
+.skill-item p { width: 100px; margin-right: 10px; /* Adjust spacing between text and progress bar as needed */ flex-shrink: 0; /* Prevent text from shrinking */ }

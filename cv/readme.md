@@ -1,6 +1,9 @@
 #About this repo
 I wanted to find a fun way to write a cv.
 
+#Viewing my cv website
+https://htmlpreview.github.io/?https://Hermannnnnnnn/some_paper_writing/blob/main/cv/cv_website/index.html
+Go to 
 #How to run locally
 I use visual studio code to write and render my codes. For my html I use scss for prettifying my page. To render the page however, you'll need to compile scss into css, which can be done with the extension Live Sass Compiler. So please install this, then there'll be a new feature added on the bottom bar called Live Sass.
 
