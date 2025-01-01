@@ -210,13 +210,30 @@ h3 {
   transition-duration: 0.3s;
 }
 
+.resume .base .skills-prog .box i {
+  display: inline-block;
+  // background: "linkedin_icon.png";
+  font-size: 30px;
+  // background: $orange;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  line-height: 60px;
+  color: $darker-blue;
+  margin: 0 10px 10px 10px;
+  transition-duration: 0.3s;
+}
+
 .column {
   float: left;
+  margin-top: -20px;
+  margin-bottom: 20px;
+
   // margin-right:10px;
 }
 .resume .func {
   width: 100%;
-  padding: 30px;
+  padding: 10px;
 }
 // .resume .func:hover > div {
 //   transition-duration: 0.5s;
@@ -258,7 +275,7 @@ h3 {
   position: relative;
   margin-left: 15px;
   padding-left: 25px;
-  padding-bottom: 15px;
+  padding-bottom: 5px;
 }
 .resume .func .work ul li:hover::before,
 .resume .func .edu ul li:hover::before {
@@ -322,17 +339,17 @@ h3 {
   transition-duration: 0.3s;
 }
 .resume .func .work {
-  background: $darker-blue;
+  background: $darkest-blue;
   padding: 15px;
   margin: 0 4% 15px 0;
 }
 .resume .func .edu {
-  background: $darker-blue;
+  background: $darkest-blue;
   padding: 15px;
   margin: 0 4% 15px 0;
 }
 .resume .func .interests {
-  background: $darker-blue;
+  background: $darkest-blue;
   padding: 15px;
   margin: 0 4% 15px 0;
 }

@@ -208,13 +208,27 @@ h3 {
   transition-duration: 0.3s;
 }
 
+.resume .base .skills-prog .box i {
+  display: inline-block;
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  line-height: 60px;
+  color: #25339b;
+  margin: 0 10px 10px 10px;
+  transition-duration: 0.3s;
+}
+
 .column {
   float: left;
+  margin-top: -20px;
+  margin-bottom: 20px;
 }
 
 .resume .func {
   width: 100%;
-  padding: 30px;
+  padding: 10px;
 }
 
 .resume .func h3 i {
@@ -242,7 +256,7 @@ h3 {
   position: relative;
   margin-left: 15px;
   padding-left: 25px;
-  padding-bottom: 15px;
+  padding-bottom: 5px;
 }
 
 .resume .func .work ul li:hover::before,
@@ -316,19 +330,19 @@ h3 {
 }
 
 .resume .func .work {
-  background: #25339b;
+  background: #1a237e;
   padding: 15px;
   margin: 0 4% 15px 0;
 }
 
 .resume .func .edu {
-  background: #25339b;
+  background: #1a237e;
   padding: 15px;
   margin: 0 4% 15px 0;
 }
 
 .resume .func .interests {
-  background: #25339b;
+  background: #1a237e;
   padding: 15px;
   margin: 0 4% 15px 0;
 }
